@@ -1,0 +1,45 @@
+/*main stylesheet */
+
+body {
+    background-color: #f4f8f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+}
+
+h1 {
+    color: #155eef;
+    text-align: center;
+    margin-top: 60px;
+
+}
+
+P{
+    
+    color: #333333;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/*Hero section styles*/
+.hero-section {
+    background: linear-gradient(to right, #4CAF50, #81C784);
+    padding: 100px 20px;
+
+}
+
+.hero-section h1 {
+    color: #3d3a14;
+
+}
+
+.hero-section p {
+    color: #4e6747;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
