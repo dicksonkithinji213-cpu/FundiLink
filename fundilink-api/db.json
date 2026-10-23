@@ -1,0 +1,31 @@
+{
+  "providers": [
+    {
+      "id": "1",
+      "name": "John Kamau",
+      "service": "Plumbing",
+      "location": "kahawa"
+    },
+    {
+      "id": "2",
+      "name": "Jane Mutiso",
+      "service": "Electrical",
+      "location": "langata"
+    },
+    {
+      "id": "3",
+      "name": "Mike Kithinji",
+      "service": "Carpentry",
+      "location": "kawangware"
+    }
+  ],
+  "messages": [
+    {
+      "name": "kithinji",
+      "email": "kithinij@gmail.com",
+      "message": "sdwqsdqwdw",
+      "id": "mTyh8DsYRZc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
