@@ -79,7 +79,7 @@ const providerList = document.getElementById("providerList");
 
 console.log("Fetching service providers from the server...");
 
-fetch("http://localhost:3004/providers")
+fetch("./fundilink-api/db.json")
     .then(function(response) {
         if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -87,7 +87,8 @@ fetch("http://localhost:3004/providers")
     return response.json();
     })
 
-    .then(providers => {
+    .then(data => {
+    const providers = data.providers;
         console.log("Service providers fetched successfully:", providers);
         providerList.innerHTML = "";
         providers.forEach(provider => {
