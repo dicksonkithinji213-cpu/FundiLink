@@ -43,7 +43,7 @@
         </p>
         <a href="#services" class="btn btn-primary btn-lg mt-4">Get Started</a>
     </div>
-
+</section>
 
 <section id="services" class="container py-5">
 
@@ -56,7 +56,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Electrician</h5>
                     <p class="card-text">Hire a certified electrician for wiring, lighting, and electrical repairs.</p>
-                    <a href="#" class="btn btn-primary">Find Electrician</a>
+                    <a href="#providerResults" class="btn btn-primary">Find Electrician</a>
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Plumber</h5>
                     <p class="card-text">Get professional plumbing services for leaks, installations, and maintenance.</p>
-                    <a href="#" class="btn btn-primary">Find Plumber</a>
+                    <a href="#providerResults" class="btn btn-primary">Find Plumber</a>
                 </div>
             </div>
         </div>
@@ -76,17 +76,33 @@
                 <div class="card-body">
                     <h5 class="card-title">Carpenter</h5>
                     <p class="card-text">Connect with skilled carpenters for furniture making, repairs, and custom projects.</p>
-                    <a href="#" class="btn btn-primary">Find Carpenter</a>
+                    <a href="#providerResults" class="btn btn-primary">Find Carpenter</a>
                 </div>
             </div>
         </div>
 </div>
 </section>
-<section id="contactForm" class="container py-5">
+<section id="providerResults" class="container py-5">
+    <h2 class="text-center mb-4">Available Service Providers</h2>
+    <p class="text-center">Select a service to view available providers in your area.</p>
+    <div class="input-group mb-4">
+        <input type="search"
+        id="searchInput"
+        class="form-control"
+        placeholder="Search for a service provider...">
+        <button type="button" 
+        class="btn btn-primary" 
+        id="searchButton">Search
+    </button>
+</div>
+<p id="searchResults"></p>
+<div  class="row row-cols-1 row-cols-md-3 g-4" id="providerList"></div>
+</section>
+<section id="contact" class="container py-5">
     <h2 class="text-center mb-4">Contact Us</h2>
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <form>
+            <form id="contactForm">
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Your Name" required>
@@ -108,6 +124,23 @@
     <h2 class="text-center mb-4">About FundiLink</h2>
     <p class="text-center">FundiLink is dedicated to connecting homeowners with reliable and skilled home service professionals. Our platform ensures that you can easily find the right expert for your needs, whether it's electrical work, plumbing, carpentry, or other home services. We prioritize quality, trust, and customer satisfaction.</p>
 </section>
+<footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+        <h4 class="text-sucess fw-bold">FundiLink</h4>
+        <p>connecting you with trusted technicians.</p>
+        <div class="mb-3">
+            <a href="#home" class="text-white mx-2">Home</a>
+            <a href="#services" class="text-white mx-2">service</a>
+            <a href="#about" class="text-white mx-2">about</a>
+            <a href="#contact" class="text-white mx-2">contact</a>
+        </div>
+        <hr class="border-secondary">
+
+        <p class="mb-0 text-white-20">
+            &copy;  2026 Fundilink. All rights reserved.
+        </p>
+    </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="js/script.js"></script>

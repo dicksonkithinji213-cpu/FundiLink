@@ -22,24 +22,27 @@ P{
     margin-top: 20px;
 }
 
-/*Hero section styles*/
+
+
+
 .hero-section {
-    background: linear-gradient(to right, #4CAF50, #81C784);
-    padding: 100px 20px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+    ), url("../images/FDLK.jpg");
 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 450px;
+    padding: 80px 20px;
+    text-align: center;
 }
 
-.hero-section h1 {
-    color: #3d3a14;
-
-}
-
+.hero-section h1,
 .hero-section p {
-    color: #4e6747;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-left:auto;
-    margin-right:auto;
-
+    color: white;
 }
+
 
