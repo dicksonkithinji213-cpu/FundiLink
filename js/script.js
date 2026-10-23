@@ -19,8 +19,8 @@ contactForm.addEventListener("submit", function(event) {
         email: email,
         message: message
     };
-    fetch("http://localhost:3004/api/providers", {
-        method: "POST",
+fetch("http://localhost:3004/messages", {
+            method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
@@ -79,7 +79,7 @@ const providerList = document.getElementById("providerList");
 
 console.log("Fetching service providers from the server...");
 
-fetch("/api/providers")
+fetch("http://localhost:3004/providers")
     .then(function(response) {
         if (!response.ok) {
         throw new Error("Network response was not ok");
